@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <title>IOLCE</title>
+</head>
+<body>
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+
+    <header class="header">
+            <img class="header--logo"src ="assets/images/logo/Logo_iolce.svg" alt="">
+
+            
+    <nav class="header__nav">
+        <div class="header__nav__close" onclick="closeMenuMobile()">
+            <img class="header__nav__close__icon" src="assets/images/closemenu.png" alt="">
+        </div>
+        <ul class="header__nav__menu">
+            <li class="header__nav__menu__link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="event.html">Event</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="cssday.html">CSS DAY</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="jeremy.html">Jeremy</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="monavis.html">Mon avis</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="team.html">Team</a>
+            </li>
+        </ul>
+</nav>
+            
+    <div class="header__burger" onclick="openMenuMobile()">
+        <img class="header__burger__icon" src="assets/images/burgermenu.png" alt="">
+    </div>
+
+</header>
+<main class="container__event">
+
+    <div class="container__gauche container__photos">
+        <div class="photos__desc">
+            <img class="img__profile photos__profile" src="assets/images/jeremy1.jpg" alt="">
+            <span>
+                <p class="photos__desc--bloc"><strong>Jeremy Keith</strong></p>
+                <p class="photos__desc--bloc"> - Cofondateur de ClearLeft</p>
+                    <a class="réseaux__liens" href="https://uk.linkedin.com/in/adactio?original_referer=https%3A%2F%2Fwww.google.com%2F">
+                        <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                    </a>
+                    <a class="réseaux__liens" href="https://twitter.com/adactio">
+                <img class="img__icons" src="assets/images/twitter.png" alt="">
+                    </a>
+            </span>
+        </div>
+        <div class="photos__desc">
+            <img class="img__profile photos__profile" src="assets/images/Ouioui.jpg" alt="">
+            <span>
+                <p class="photos__desc--bloc"><strong>Ana Ferreira</strong></p>
+                <p class="photos__desc--bloc"> - Graphic et Web Designer</p>
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+                <a class="réseaux__liens" href="https://twitter.com/theanaferreira?lang=fr">
+            <img class="img__icons" src="assets/images/twitter.png" alt="">
+                </a>
+            </span>
+        </div>
+        <div class="photos__desc">
+            <img class="img__profile photos__profile" src="assets/images/LeaVerou.jpg" alt="">
+            <span>
+                <p class="photos__desc--bloc"><strong>Léa Vérou</strong></p>
+                <p class="photos__desc--bloc"> - Chercheuse dans le web</p>
+                <a class="réseaux__liens" href="https://www.linkedin.com/in/leaverou">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+                <a class="réseaux__liens" href="https://twitter.com/LeaVerou?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img class="img__icons" src="assets/images/twitter.png" alt="">
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="container__droit">
+
+        <h2 class="title title__medium">Into the CSS DAY</h2>
+
+    <div class="p__scroll p__scroll--cssday">
+        <p class="p__blocs">
+Le CSS Day présente une suite de conférences avec une ambiance informelle, qui compte de nombreuses pauses et qui cherche à favoriser le dialogue entre les intervenants et le public. L'événement voit le jour en 2013. Il s'agissait de conférences avancées sur le css. Par la suite, la conférence s’agrandit et des sessions de conceptions y sont ajoutées.
+
+Aujourd’hui la conférence se déroule sur deux jours et elle compte de nombreux participants parmi lesquels s'entremêlent des développeurs, des designers CSS ou encore des fournisseurs de navigateurs.
+
+Quatorze intervenants étaient invités cette année. Le premier jour a débuté par notre conférencier favori, Jeremy Keith, succédé par la développeuse web Lea Verou avec une impressionnante démonstration sur le CSS ou encore Ana Ferreira, UX designer, qui a amené une approche humaine du travail à distance. 
+
+Le deuxième jour était rythmé par des conférenciers talentueux, comme Adam Argyle qui démontre l’évolution des scrollbar mais aussi Ben Evans avec son talent artistique en CSS.
+Un événement au même avenir que ce langage révolutionnaire.
+
+        </p>
+    </div>
+    </div>
+</div>
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay-menu-mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay-menu-mobile').classList.remove('open');
+        }
+    </script>

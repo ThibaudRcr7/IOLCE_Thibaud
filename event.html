@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    
+    <script src="assets/js/app.js"></script>
+
+    <title>IOLCE</title>
+</head>
+<body>
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+
+    <header class="header">
+
+        <img class="header--logo" src ="assets/images/logo/Logo_iolce.svg" alt="">
+    
+    <nav class="header__nav">
+        <div class="header__nav__close" onclick="closeMenuMobile()">
+            <img class="header__nav__close__icon" src="assets/images/closemenu.png" alt="">
+        </div>
+        <ul class="header__nav__menu">
+            <li class="header__nav__menu__link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="event.html">Event</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="cssday.html">CSS DAY</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="jeremy.html">Jeremy</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="monavis.html">Mon avis</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="team.html">Team</a>
+            </li>
+        </ul>
+</nav>
+            
+    <div class="header__burger" onclick="openMenuMobile()">
+        <img class="header__burger__icon" src="assets/images/burgermenu.png" alt="">
+    </div>
+
+</header>
+<main class="container__event">
+
+        <div class="container__gauche">
+            <img class="img img__event" src="assets/images/css_day_img_members.png" alt="">
+            <p class="p__small"> Pour ce travail, avec mon groupe nous avons choisi la conférence présentée par Jeremy Keith.</p>
+        </div>
+        <div class="container__droit">
+
+            <h2 class="title title__medium">A Stylish Event</h2>
+
+        <div class="p__scroll">
+            <p class="p__blocs">  La “théorie de l'information“ de Shannon et le “sharing context“ structure et contextualise ce qu’on peut notamment trouver sur internet, deux notions importantes du web selon Jeremy.
+
+                Il nous raconte le début du web design, se faisant directement dans l’HTML. Plusieurs propositions de “stylesheet” font leur apparition au début des années 90, le CSS apparaît ensuite en 1995.
+                
+                Le css peut-être simple, il n'est pas facile pour autant.
+                
+                Par la suite, d’anciens “hacks” nous sont présentés. Détourner des outils pour la mise en page, des combines qui montrent l’évolution et la nécessité de l’être pour le CSS, ce qui introduit  au fait que de nouveau format de CSS sont apparus.
+                Une grande question se pose toujours, qu’est ce qu’il manque encore au CSS, les gens chercheront une autre façon de coder qui sera plus accessible.
+                
+                En conclusion, Jeremy nous explique que rien est inévitable, l’avenir est créé des actions faites aujourd’hui, il faut donc prendre les bonnes décisions afin d’assurer l’avenir qu’on souhaite avoir.
+            </p>
+        </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    function openMenuMobile() {
+        document.querySelector('.header__nav').classList.add('open');
+        document.querySelector('.overlay-menu-mobile').classList.add('open');
+    }
+
+    function closeMenuMobile() {
+        document.querySelector('.header__nav').classList.remove('open');
+        document.querySelector('.overlay-menu-mobile').classList.remove('open');
+    }
+</script>
+
+

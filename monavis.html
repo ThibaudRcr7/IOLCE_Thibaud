@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <title>IOLCE</title>
+</head>
+<body>
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+
+    <header class="header">
+            <img class="header--logo"src ="assets/images/logo/Logo_iolce.svg" alt="">
+
+            
+    <nav class="header__nav">
+        <div class="header__nav__close" onclick="closeMenuMobile()">
+            <img class="header__nav__close__icon" src="assets/images/closemenu.png" alt="">
+        </div>
+        <ul class="header__nav__menu">
+            <li class="header__nav__menu__link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="event.html">Event</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="cssday.html">CSS DAY</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="jeremy.html">Jeremy</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="monavis.html">Mon avis</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="team.html">Team</a>
+            </li>
+        </ul>
+</nav>
+            
+    <div class="header__burger" onclick="openMenuMobile()">
+        <img class="header__burger__icon" src="assets/images/burgermenu.png" alt="">
+    </div>
+
+</header>
+<main class="container__event">
+
+    <div class="container__gauche img__video">
+        <img class="img img__home" src="assets/images/vidéo.jpg" alt="">
+    </div>
+    <div class="container__droit">
+
+        <h2 class="title title__medium">Ce que j'en ai pensé</h2>
+
+    <div class="p__scroll p__scroll--avis">
+        
+        <h3 class="title__small title__avis">Mise en contexte</h3>
+
+        <p class="p__blocs">
+            Au départ, j’avais cliqué sur le lien de cette conférence, car c’était la première et qu’il fallait bien commencer quelque part.
+
+            Je n’étais pas spécialement intrigué, je me disais que la conférence allait être trop sérieuse, mais je me suis tout de même lancé.
+            
+            Quand Jeremy Keith est monté sur la scène, j'ai directement ressenti une sorte de sympathie qui au long de la vidéo m’a permis de rester attentif.
+        </p>
+                
+        <h3 class="title__small title__avis">Début de la conférence</h3>
+
+        <p class="p__blocs">
+            Ce que j’ai trouvé très intéressant dans cette conférence est qu’il soit parti du tout début, je veux dire par là qu’il a démarré son sujet en partant de très loin.
+            Claude Shannon en 1985 et la révolution de la théorie de l’information et étape par étape Jeremy vas nous raconter pleins de choses dans un ordre très chronologique simple à suivre.
+            
+            Keith rebondit sur différents sujets et arrive à nous captiver par ses petites anecdotes historiques.
+            
+            Il nous fait comprendre le sens du sharing content par la simplicité de lire l’heure, ce mélange entre faits historiques suivi d’un jeu permet de garder sa concentration. 
+        </p>
+                
+        <h3 class="title__small title__avis">Le CSS</h3>
+
+        <p class="p__blocs">
+            Par la suite, on est arrivé au sujet principal, les ancêtres et l’évolution de CSS. Le conférencier a abordé cette thématique avec beaucoup de précision, mais sans non plus aller dans les détails. 
+            Il voulait que même ceux qui ne sont pas dans le domaine du web comprennent. 
+
+            Ma partie préférée est également celle sur laquelle je me suis le plus penché pour les textes en groupes, les “Hacks”, j’étais impressionné par l’inventivité des web designers, trouver des alternatives pour pallier le manque d’outils du CSS de l’époque représente pour moi toute la passion qu’ils mettent dans leur travail.
+
+            Heureusement et malheureusement maintenant tout peut être fait au même endroit, mais pourquoi ‘malheureusement’ ?
+
+            Parce que de mon point de vue, c’était une manière de développer son esprit créatif, se creuser la tête et devoir chercher parfois très loin pour trouver un moyen de pallier le problème et surtout de pouvoir partager nos découvertes avec d’autres personnes.
+        </p>
+                
+        <h3 class="title__small title__avis">Travailler en groupe</h3>
+
+        <p class="p__blocs">
+            L’entraide est quelque chose de primordial dans le webdesign, une bonne cohésion de groupe amène à de bons résultats, durant ce projet, nous nous sommes épaulés, chacun pouvait compter sur l’autre sans s’inquiéter de la qualité du travail.
+
+            Nous avons réfléchi et écrit ensemble, on s’est questionnés sur nos textes de nombreuses fois, l’avis des autres comptes beaucoup.
+
+            C’est en partie grâce au partage que je me suis beaucoup investi dans ce travail. 
+        </p>
+                
+        <h3 class="title__small title__avis">Conclusion et leçon de vie</h3>
+
+        <p class="p__blocs">
+            J’aimerais conclure par les dernières phrases de la conférence, des paroles très motivantes de la part de Jeremy.
+
+            Il nous explique que notre monde actuel est façonné par les actions du passé, que chaque choses même parfois infimes auront un impact sur le futur, alors en suivant ce chemin de pensée, il suffit de réfléchir à nos décisions actuelles afin de créer le monde qu’on souhaite voir dans notre futur.
+        </p>
+    </div>
+    </div>
+</div>
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay-menu-mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay-menu-mobile').classList.remove('open');
+        }
+    </script>

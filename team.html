@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <title>IOLCE</title>
+</head>
+<body>
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+
+    <header class="header">
+            <img class="header--logo"src ="assets/images/logo/Logo_iolce.svg" alt="">
+
+            
+    <nav class="header__nav">
+        <div class="header__nav__close" onclick="closeMenuMobile()">
+            <img class="header__nav__close__icon" src="assets/images/closemenu.png" alt="">
+        </div>
+        <ul class="header__nav__menu">
+            <li class="header__nav__menu__link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="event.html">Event</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="cssday.html">CSS DAY</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="jeremy.html">Jeremy</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="monavis.html">Mon avis</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="team.html">Team</a>
+            </li>
+        </ul>
+</nav>
+            
+    <div class="header__burger" onclick="openMenuMobile()">
+        <img class="header__burger__icon" src="assets/images/burgermenu.png" alt="">
+    </div>
+
+</header>
+<main class="container__event">
+
+    <div class="img__video container__gauche">
+        <img class="img img__home" src="assets/images/vidéo.jpg" alt="">
+    </div>
+    <div class="container__droit">
+
+        <h2 class="container__droit title title__medium">La Team</h2>
+
+        <div class="container__droit p__scroll p__scroll--team">
+
+            <h3 class="title__small title__small--team">Mika Cornelis</h3>
+                <div class="test__team">
+                    <img class="img__team img__profile" src="assets/images/mika.jpg" alt="">
+                    <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                        <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                    </a>
+                    <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                        <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                    </a>
+                </div>
+            <p class="p__blocs p__blocs--team">
+                Le pro du Java Script, on peut toujours compter sur lui dès qu’il y a un problème.
+            </p>
+
+            <h3 class="title__small title__small--team">Jonathan Lemineur</h3>
+            <div class="test__team">
+                <img class="img__team img__profile" src="assets/images/jona.jpg" alt="">
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+            </div>
+            <p class="p__blocs p__blocs--team">
+                Le beau parleur, il trouve toujours les mots justes et peut improviser un long débat sur n’importe quel sujet.
+            </p>
+
+            <h3 class="title__small title__small--team">Kesily Ouattara</h3>
+            <div class="test__team">
+                <img class="img__team img__profile" src="assets/images/kesily.jpg" alt="">
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+            </div>
+            <p class="p__blocs p__blocs--team">
+                Le designer, il nous ponds les meilleurs designs, il a un esprit très créatif et est de très bon conseil.
+            </p>
+
+            <h3 class="title__small title__small--team">Thibaud Rocour</h3>
+            <div class="test__team">
+                <img class="img__team img__profile" src="assets/images/moi.png" alt="">
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+                <a class="réseaux__liens" href="https://iconmonstr.com/linkedin-3-svg/">
+                    <img class="img__icons" src="assets/images/linkedin.png" alt="">
+                </a>
+            </div>
+            <p class="p__blocs p__blocs--team">
+                Je fais de mon mieux pour aider mon groupe, j'essaye toujours de faire mieux que mon moi d'avant.
+            </p>
+        </div>
+    </div>
+</main>
+
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay-menu-mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay-menu-mobile').classList.remove('open');
+        }
+    </script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hxi2hpi.css">
+    <title>IOLCE</title>
+</head>
+<body>
+
+    <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+
+    <header class="header">
+            <img class="header--logo"src ="assets/images/logo/Logo_iolce.svg" alt="">
+
+            
+    <nav class="header__nav">
+        <div class="header__nav__close" onclick="closeMenuMobile()">
+            <img class="header__nav__close__icon" src="assets/images/closemenu.png" alt="">
+        </div>
+        <ul class="header__nav__menu">
+            <li class="header__nav__menu__link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="event.html">Event</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="cssday.html">CSS DAY</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="jeremy.html">Jeremy</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="monavis.html">Mon avis</a>
+            </li>
+            <li class="header__nav__menu__link">
+                <a href="team.html">Team</a>
+            </li>
+        </ul>
+</nav>
+            
+    <div class="header__burger" onclick="openMenuMobile()">
+        <img class="header__burger__icon" src="assets/images/burgermenu.png" alt="">
+    </div>
+
+</header>
+<main class="container__event">
+
+    <div class="container__gauche">
+        <img class="img img__portrait" src="assets/images/jeremy2.jpg" alt="">
+
+    </div>
+    <div class="container__droit">
+
+        <h2 class="title title__medium">Plus sur Jeremy Keith</h2>
+
+    <div class="p__scroll p__scroll--jeremy">
+        <p class="p__blocs">
+            Jeremy Keith est un développeur web, conférencier, musicien et écrivain britannique.
+
+            Né à Londres, en 1971 il fait ses études au collège des arts et design en Irlande. En 2005 il publie son premier livre Dom Scripting et sortira par la suite HTML5 for web designers. La même année, avec Richard Rutte, ils confondent Clearleft et l'annoncent au cours de leur toute première conférence SXSW. 
+            
+            Ce personnage est un homme avec une philosophie de vie très honorable, il vit dans le partage de connaissance, prône une vie sans artifices. Sa boîte est un bon exemple de cette philosophie, elle montre qu’il n’y a pas  nécessaire de se situer dans de grandes villes reconnues pour faire du résultat. 
+            
+            Également musicien, il crée son premier site web pour un groupe allemand dans lequel il jouait en 1997. Réel passionné, il aborde ses conférences d’un point de vue historique et nous rappelle le passé pour nous pousser à la vision du futur.            
+        </p>
+    </div>
+    </div>
+</div>
+</main>
+    <script>
+        function openMenuMobile() {
+            document.querySelector('.header__nav').classList.add('open');
+            document.querySelector('.overlay-menu-mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            document.querySelector('.header__nav').classList.remove('open');
+            document.querySelector('.overlay-menu-mobile').classList.remove('open');
+        }
+    </script>
